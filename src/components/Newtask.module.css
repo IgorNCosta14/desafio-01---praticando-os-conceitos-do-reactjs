@@ -1,0 +1,25 @@
+.textBox {
+    max-width: 46rem;
+    display: flex; 
+    border: 0;
+    gap: 0.5rem;
+}
+
+.textBox input {
+    justify-content: center;
+    align-items: center;
+    background: var(--gray500);
+    border-radius: 8px;
+    border-color: var(--gray700);
+    height: 3.375rem;
+    width: 39.875rem;
+}
+
+.textBox button {
+    background: var(--blueDark);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    height: 3.25rem;
+    width: 5.625rem;
+} 
