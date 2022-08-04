@@ -1,0 +1,34 @@
+.task {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.75rem;
+
+    width: 46rem;
+    height: 4.5rem;
+
+    background: var(--gray500);
+
+    border: 1px solid var(--gray400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.task input {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1rem solid var(--blue);
+
+}
+
+.task input:hover { 
+    border-color: var(--blueDark);
+}
+
+.task span {
+    color: var(--gray100);
+}
