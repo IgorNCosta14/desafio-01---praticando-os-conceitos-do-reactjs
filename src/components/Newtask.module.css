@@ -1,25 +1,60 @@
 .textBox {
-    max-width: 46rem;
+    position: absolute;
+    width: 46rem;
+    height: 3,375rem;
+    left: calc(50% - 46rem/2);
+    top: 173px;
     display: flex; 
-    border: 0;
     gap: 0.5rem;
 }
 
-.textBox input {
-    justify-content: center;
+.textBox textarea {
+    box-sizing: border-box;
+    resize: none;
+
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    background: var(--gray500);
-    border-radius: 8px;
-    border-color: var(--gray700);
-    height: 3.375rem;
+    padding: 1rem;
+    gap: 0.5rem;
+
     width: 39.875rem;
+    height: 3.375rem;
+
+
+    background: var(--gray500);
+    
+    color: var(--gray100);
+
+    border: 1px solid var(--gray700);
+    border-radius: 8px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    outline: none;
+    
+}
+
+.textBox textarea:focus {
+    border-color: var(--purpleDark)
 }
 
 .textBox button {
+    display: flex;
+    flex-direction: row;
+    border: none;
     background: var(--blueDark);
+    color: var(--gray100);
     border-radius: 8px;
     justify-content: center;
     align-items: center;
-    height: 3.25rem;
+    height: 3.375rem;
     width: 5.625rem;
+    gap: 0.5rem;
+    padding: 1rem;
 } 
+
+.textBox button:hover {
+    background: var(--blue)
+}

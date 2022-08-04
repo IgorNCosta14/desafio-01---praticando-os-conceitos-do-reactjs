@@ -4,8 +4,13 @@ import styles from "./NewTask.module.css"
 export function NewTask() {
     return (
         <div className={styles.textBox}>
-            <input type="text" />
-            <button>Criar <PlusCircle /></button>
+            <textarea 
+                name="comment"
+                placeholder="Adicione uma nova tarefa"
+            />
+            <button type="submit">
+                Criar<PlusCircle/>
+            </button>
         </div>
     )
 }
