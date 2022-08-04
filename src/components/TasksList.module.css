@@ -1,0 +1,122 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    gap: 1.5rem;
+
+    position: absolute;
+    width: 46rem;
+    height: 17.9375rem;
+    left: calc(50% - 46rem/2);
+    top: 18.1875rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-end;
+    gap: 35,0625rem;
+    height: 1,1875rem;
+    width: 46rem;
+}
+
+.created {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem;
+    gap: 0.5rem;
+
+    width: 8,6875rem;
+    height: 1.1875rem;
+}
+
+.created strong {
+    width: 6,625rem;
+    height: 1,0625rem;
+
+    color: var(--blue);
+}
+
+.created span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 10px;
+
+    width: 25px;
+    height: 19px;
+
+    background: var(--gray400);
+    border-radius: 999px;
+
+    color: var(--gray200);
+}
+
+.done {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem;
+    gap: 0.5rem;
+
+    width: 6,9375rem;
+    height: 1.1875rem;
+}
+
+.done strong {
+    width: 4,875rem;
+    height: 1,0625rem;
+
+    color: var(--purple);
+}
+
+.done span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 10px;
+
+    width: 25px;
+    height: 19px;
+
+    background: var(--gray400);
+    border-radius: 999px;
+
+    color: var(--gray200);
+}
+
+.tasksWrapper {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+    gap: 1rem;
+
+    width: 46rem;
+    height: 15.25rem;
+
+    border-top: 1px solid var(--gray400);
+    border-radius: 8px;
+}
+
+.tasksWrapper span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 43rem;
+    height: 2.75rem;
+
+    text-align: center;
+
+    color: var(--gray300);
+}
