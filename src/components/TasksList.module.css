@@ -120,3 +120,11 @@
 
     color: var(--gray300);
 }
+
+.listWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+}
