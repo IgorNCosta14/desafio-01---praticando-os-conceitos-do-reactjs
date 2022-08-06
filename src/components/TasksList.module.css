@@ -47,8 +47,8 @@
     padding: 2px 8px;
     gap: 10px;
 
-    width: 25px;
-    height: 19px;
+    min-width: 25px;
+    min-height: 19px;
 
     background: var(--gray400);
     border-radius: 999px;
@@ -82,8 +82,8 @@
     padding: 2px 8px;
     gap: 10px;
 
-    width: 25px;
-    height: 19px;
+    min-width: 25px;
+    min-height: 19px;
 
     background: var(--gray400);
     border-radius: 999px;
