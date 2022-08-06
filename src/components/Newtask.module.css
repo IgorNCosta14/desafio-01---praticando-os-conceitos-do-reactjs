@@ -33,7 +33,7 @@
     order: 0;
     flex-grow: 1;
     outline: none;
-    
+    overflow: hidden;
 }
 
 .textBox textarea:focus {
@@ -53,8 +53,14 @@
     width: 5.625rem;
     gap: 0.5rem;
     padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
 } 
 
-.textBox button:hover {
+.textBox button:hover:enabled {
     background: var(--blue)
+}
+
+.textBox button:hover:disabled {
+    cursor: not-allowed;
 }
