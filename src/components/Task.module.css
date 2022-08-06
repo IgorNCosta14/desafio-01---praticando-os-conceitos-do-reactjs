@@ -25,6 +25,7 @@
 .task label {
     width: 0;
     height: 0;
+    cursor: pointer;
 }
 
 .task input + label:before {
@@ -57,9 +58,7 @@
     background-color: var(--purple);
 }
 
-.task span {
-    color: var(--gray100);
-}
+
 
 .task button {
     display: flex;
@@ -70,6 +69,7 @@
     border-radius: 4px;
     background: transparent;
     border-color: transparent;
+    cursor: pointer;
 }
 
 .task button:hover {
@@ -78,4 +78,21 @@
 
 .task button:hover img{
     filter: invert(76%) sepia(86%) saturate(4338%) hue-rotate(321deg) brightness(90%) contrast(97%);
+}
+
+.textNotDone {
+    color: var(--gray100);
+}
+
+.textDone {
+    color: var(--gray300);
+    text-decoration-line: line-through;
+}
+
+.task span {
+    width: 39.5rem;
+    height: 2.5rem;
+    text-align: left;
+    padding: 0px 12px 0px 12px;
+    word-break: break-word;
 }
