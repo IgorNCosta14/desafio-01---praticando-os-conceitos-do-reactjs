@@ -1,9 +1,9 @@
 import { PlusCircle } from "phosphor-react"
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import styles from "./NewTask.module.css"
 
 interface newTaskProps {
-    onCreateNewTaskText: () => string;
+    onCreateNewTaskText: (newTaskText:string) => void;
 }
 
 export function NewTask({onCreateNewTaskText}: newTaskProps) {
@@ -13,29 +13,28 @@ export function NewTask({onCreateNewTaskText}: newTaskProps) {
         setNewTaskText(event.target.value);
     }
 
-    function handleSendNewTaskText(event: FormEvent) {
-        event.preventDefault()
-
+    function handleSendNewTaskText() {
         onCreateNewTaskText(newTaskText)
-
-        console.log(newTaskText);
 
         setNewTaskText('')
     }
 
+    const isNewCommentEmpty = newTaskText.length === 0;
+
     return (
-        <div className={styles.textBox}>
+        <form className={styles.textBox}>
             <textarea 
                 name="comment"
                 value={newTaskText}
                 onChange={handleNewTaskText}
                 placeholder="Adicione uma nova tarefa"
-                
+                maxLength={134}
+                required 
             />
 
-            <button type="submit" onClick={handleSendNewTaskText}>
+            <button type="submit" onClick={handleSendNewTaskText} disabled={isNewCommentEmpty} >
                 Criar<PlusCircle/>
             </button>
-        </div>
+        </form>
     )
 }
