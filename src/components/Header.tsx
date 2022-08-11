@@ -4,7 +4,7 @@ import rocketLogo from "../assets/logo.svg"
 export function Header() {
     return (
         <header className={styles.header}>
-            <img src={rocketLogo} alt="Rocket logo" />        
+            <img src={rocketLogo} alt="Rocket logo" />     
         </header>
     )
 }
